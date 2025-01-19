@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser'
 const app = express()
 
 app.use(cors({
-  origin: ["http://localhost:5173"],
+  origin: ["http://localhost:5173", 'https://emailify.netlify.app'],
   methods: ["GET", "PUT", "DELETE", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
   credentials: true,
